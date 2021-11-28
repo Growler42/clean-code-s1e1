@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.header .img {
+.header__img {
   width: 100%;
 }
 
-.header .link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -40,17 +40,17 @@
   flex-grow: 1;
 }
 
-.new-task-row-wrapper {
+.add-task__input-wrapper {
   display: flex;
 }
 
-.list {
+.to-do__list {
   margin: 0;
   padding: 0;
 }
 
-.list-item,
-.section-header {
+.to-do__list__item,
+.to-do__section-header {
   list-style: none;
 }
 
@@ -74,8 +74,8 @@
 }
 
 /* Heading */
-.section-header,
-.new-task-label {
+.to-do__section-header,
+.add-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +85,7 @@
   text-transform: uppercase;
 }
 
-.task-input {
+.txt-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,22 +98,22 @@
   color: #888;
 }
 
-.task-input:focus {
+.txt-input:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task-label {
+.add-task__label {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.add-task__input-wrapper__input {
   width: 318px;
 }
 
 /* Task list */
-.list-item {
+.to-do__list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -123,47 +123,47 @@
   align-items: center;
 }
 
-.list-item > * {
+.to-do__list__item > * {
   vertical-align: middle;
 }
 
-.task-input-check {
+.to-do__list__item__checkbox {
   margin: 0 10px;
 }
 
-.list-item > .label {
+.to-do__list__item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.delete .img {
+.delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete .img:hover {
+.delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .label {
+#completed-tasks .to-do__list__item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list-item .task-input {
+.to-do__list__item__input {
   display: none;
 }
 
-.edit-mode .task-input {
+.edit-mode .to-do__list__item__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .label {
+.edit-mode .to-do__list__item__label {
   display: none;
 }
