@@ -34,12 +34,6 @@
   margin: 0 auto 0;
 }
 
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
-
 .add-task__input-wrapper {
   display: flex;
 }
@@ -74,6 +68,14 @@
 }
 
 /* Heading */
+.add-task {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
 .to-do__section-header,
 .add-task__label {
   color: #333;
@@ -138,6 +140,12 @@
   width: 226px;
 }
 
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
 .delete__img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -157,6 +165,7 @@
 /* Edit Task */
 .to-do__list__item__input {
   display: none;
+  width: 226px;
 }
 
 .edit-mode .to-do__list__item__input {
